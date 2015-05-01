@@ -8,7 +8,7 @@ Stable tag: 0.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-This plugin integrates Lytics into your WordPress site. It includes support for common use management tools like Restrict Content Pro as well as common form builders including Gravityforms and Ninjaforms.
+This plugin integrates Lytics into your WordPress site. It includes support for common premium plugins tools like Gravityforms and Restrict Content Pro.
 
 == Description ==
 
@@ -51,10 +51,18 @@ sorry, no screenshots at this time.
 
 == Changelog ==
 
+== 0.2 ==
+
+Fixes an error when there are no enabled addons.
+
 = 0.1 =
 * The initial release. Includes base support for the Lytics tracking code and four addons.
 
 == Upgrade Notice ==
+
+== 0.2 ==
+
+Fixes errors when no addons are enabled.
 
 = 0.1 =
 This is the initial release.
