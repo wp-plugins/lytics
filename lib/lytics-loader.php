@@ -18,7 +18,7 @@ class Lytics{
     * @author Russell Fair
     */
     function set_version(){
-	$this->version = '0.1';
+	$this->version = '0.2';
     }
 
     /**

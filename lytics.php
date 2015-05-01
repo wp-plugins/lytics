@@ -3,11 +3,10 @@
 /**
 * Plugin Name: Lytics
 * Author: Russell Fair
-* Version: 0.1
+* Version: 0.2
 * Description: Adds Lytics to your WordPress site and connects to various web forms and third party plugin api's (e.g. Gravityforms, RCP and Jetpack)
 * Plugin URI:        http://religionnews.com/rns-slingshot-plugin-uri/
 * Description:       Creates beautiful HTML Emails of curated content.
-* Version:           1.9.1
 * Author URI:        http://q21.co/
 * License:           GPL-2.0+
 * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
