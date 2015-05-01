@@ -118,7 +118,7 @@ class LyticsSettings{
     * @todo clean up this output so that it is more readable
     */
     function accout_instructions( ){ ?>
-	    <p> <?php _e( 'If you haven\'t already, zip over to www.getlytics.com to sign up for a free Lytics account.', 'lytics'); ?>
+            <p> <?php _e( 'If you haven\'t already, zip over to www.getlytics.com to sign up for a free Lytics account.', 'lytics'); ?>
 	<p> <?php _e( 'Enter your Lytics tracking tag as shown on your Lytics account dashboard.', 'lytics'); ?>
 	<p> <?php _e( 'To find your Lytics tracking tag, visit the <i>Integrations</i> tab on your Lytics Dashboard and navigate to the instructions for integrating Lytics.', 'lytics'); ?>
 	<p> <?php _e( 'https://admin.lytics.io/#/documentation/jstag_anon' ); ?>
