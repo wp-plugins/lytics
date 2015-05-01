@@ -78,7 +78,10 @@ class LyticsSettings{
     * @return array $addons the checked keys to save
     */
     function validate_addon_selection( $addons ){
-	return array_keys( $addons );
+        if ( $addons && is_array( $addons )){
+            $addons= array_keys( $addons );
+        }
+        return $addons;
     }
 
     /**
