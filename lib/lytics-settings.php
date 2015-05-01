@@ -117,11 +117,12 @@ class LyticsSettings{
     * @author Russell Fair
     * @todo clean up this output so that it is more readable
     */
-    function accout_instructions( ){
-	_e( 'Enter your Lytics tracking tag as shown on your Lytics account dashboard.', 'lytics');
-	_e( 'To find your Lytics tracking tag, visit the <i>Integrations</i> tab on your Lytics Dashboard and navigate to the instructions for integrating Lytics.', 'lytics');
-	_e( 'https://admin.lytics.io/#/documentation/jstag_anon' );
-	_e( 'Then click "Install Tag" to reveal your tracking tag.', 'lytics');
+    function accout_instructions( ){ ?>
+	<p> <?php _e( 'Enter your Lytics tracking tag as shown on your Lytics account dashboard.', 'lytics'); ?>
+	<p> <?php _e( 'To find your Lytics tracking tag, visit the <i>Integrations</i> tab on your Lytics Dashboard and navigate to the instructions for integrating Lytics.', 'lytics'); ?>
+	<p> <?php _e( 'https://admin.lytics.io/#/documentation/jstag_anon' ); ?>
+	<p> <?php _e( 'Then click "Install Tag" to reveal your tracking tag.', 'lytics'); ?>
+    <?php
     }
 
     /**
@@ -129,8 +130,9 @@ class LyticsSettings{
     * @since 0.1
     * @author Russell Fair
     */
-    function addon_selection(){
-	_e( 'Select the addons that you wish to enable on your site.' , 'lytics' );
+    function addon_selection(){ ?>
+	<p> <?php _e( 'Select the addons that you wish to enable on your site.' , 'lytics' ); ?>
+    <?php
     }
 
     /**
@@ -168,7 +170,7 @@ class LyticsSettings{
 	$addon_list = $addons->get_addons();
 
 	foreach ( $addon_list as $addon => $addon_settings ){
-	    $checked = ( in_array( $addon_settings['id'], $enabled_addons ) ) ? ' checked': '' ;
+	    $checked = ( is_array( $enabled_addons) && in_array( $addon_settings['id'], $enabled_addons ) ) ? ' checked': '' ;
 	    printf('<p><input type="checkbox" name="lytics_addon_selection[%s]"%s/>', $addon_settings['id'], $checked );
 	    printf('<label for="lytics_addon_selection[%s]">%s</label>', $addon_settings['id'], $addon_settings['name'] );
 	}

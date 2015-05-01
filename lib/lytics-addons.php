@@ -44,7 +44,7 @@ class LyticsAddons{
 	$enabled_addons = get_option('lytics_addon_selection');
 
 	foreach ($addons as $addon){
-	    if( in_array( $addon['id'] , $enabled_addons ) ){
+	    if( is_array( $enabled_addons) && in_array( $addon['id'] , $enabled_addons ) ){
 		$addon = $this->load_addon( $addon );
 		$this->addons[] = $addon;
 	    }
